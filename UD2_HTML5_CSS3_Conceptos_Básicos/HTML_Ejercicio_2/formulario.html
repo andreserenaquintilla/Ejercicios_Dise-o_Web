@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Andrés Serena Quintilla" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <header>
+      <h1>Tarea 02</h1>
+    </header>
+    <main>
+      <p>El asterisco (<b>*</b>) indica un campo obligatorio.</p>
+      <h2>Información de teclas de acceso rápido</h2>
+      <p>Antes de la tecla de atajo pulsar:</p>
+      <ul>
+        <li>Firefox: Mayusc. + Alt</li>
+        <li>Opera: Mayusc. + Esc</li>
+        <li>Chrome, Safari y Explorer: Alt</li>
+      </ul>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>DATOS PERSONALES</legend>
+          <p>
+            <label for="nombre">* Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required />
+          </p>
+          <p>
+            <label for="apellido1">* Primer apellido:</label>
+            <input type="text" id="apellido1" name="apellido1" required />
+          </p>
+          <p>
+            <label for="apellido2">* Segundo apellido:</label>
+            <input type="text" id="apellido2" name="apellido2" required />
+          </p>
+          <div role="radiogroup" aria-labelledby="titulo-sexo">
+            <p id="titulo-sexo">* Sexo:</p>
+            <p>
+              <input type="radio" id="hombre" name="sexo" value="hombre" />
+              <label for="hombre">Hombre</label>
+            </p>
+            <p>
+              <input
+                type="radio"
+                id="mujer"
+                name="sexo"
+                value="mujer"
+                required
+              />
+              <label for="mujer">Mujer</label>
+            </p>
+          </div>
+          <div role="radiogroup" aria-labelledby="titulo-grupo-edad">
+            <p id="titulo-grupo-edad">* Grupo de edad:</p>
+            <p>
+              <input
+                type="radio"
+                id="menor-20"
+                name="edad"
+                value="menor-20"
+                required
+              />
+              <label for="menor-20">Menor de 20</label>
+            </p>
+            <p>
+              <input
+                type="radio"
+                id="entre-20-y-35"
+                name="edad"
+                value="entre-20-y-35"
+              />
+              <label for="entre-20-y-35">20 - 35</label>
+            </p>
+            <p>
+              <input
+                type="radio"
+                id="entre-36-y-55"
+                name="edad"
+                value="entre-36-y-55"
+              />
+              <label for="entre-36-y-55">36 - 55</label>
+            </p>
+            <p>
+              <input
+                type="radio"
+                id="mayor-de-55"
+                name="edad"
+                value="mayor-de-55"
+              />
+              <label for="mayor-de-55">Mayor de 55</label>
+            </p>
+          </div>
+          <p>
+            <label for="pais-de-nacimiento">* País de nacimiento:</label>
+            <select name="pais" id="pais-de-nacimiento" required>
+              <option value="">Seleccione un pais</option>
+              <option value="Espanya">España</option>
+              <option value="Reino-Unido">Reino Unido</option>
+              <option value="Francia">Francia</option>
+              <option value="Alemania">Alemania</option>
+              <option value="Italia">Italia</option>
+              <option value="Portugal">Portugal</option>
+              <option value="Andorra">Andorra</option>
+              <option value="Catalunya">Cataluña</option>
+            </select>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>DATOS BANCARIOS</legend>
+          <p>
+            <label for="ccc">C.C.C.:</label>
+            <input type="text" id="ccc" name="ccc" />
+          </p>
+          <div role="radiogroup" aria-labelledby="tipo-de-cuenta">
+            <p id="tipo-de-cuenta">Tipo de cuenta:</p>
+            <p>
+              <input
+                type="radio"
+                id="de-ahorro"
+                name="cuenta-bancaria"
+                value="ahorro"
+              />
+              <label for="de-ahorro">De ahorro</label>
+            </p>
+            <p>
+              <input
+                type="radio"
+                id="corriente"
+                name="cuenta-bancaria"
+                value="corriente"
+              />
+              <label for="corriente">Corriente</label>
+            </p>
+          </div>
+          <div role="radiogroup" aria-labelledby="tipo-de-sucursal">
+            <p id="tipo-de-sucursal">Tipo de sucursal:</p>
+            <p>
+              <input
+                type="radio"
+                id="sucursal-banco"
+                name="sucursal"
+                value="banco"
+              />
+              <label for="sucursal-banco">Banco</label>
+            </p>
+            <p>
+              <input
+                type="radio"
+                id="sucursal-caja"
+                name="sucursal"
+                value="caja"
+              />
+              <label for="sucursal-caja">Caja</label>
+            </p>
+          </div>
+          <div role="group" aria-labelledby="servicios-contratados">
+            <p id="servicios-contratados">Servicios contratados:</p>
+            <p>
+              <input
+                type="checkbox"
+                id="nomina-domiciliada"
+                name="servicios[]"
+                value="nomina-domiciliada"
+              />
+              <label for="nomina-domiciliada">Nómina domiciliada</label>
+            </p>
+            <p>
+              <input
+                type="checkbox"
+                id="prestamo-hipotecario"
+                name="servicios[]"
+                value="prestamo-hipotecario"
+              />
+              <label for="prestamo-hipotecario">Préstamo hipotecario</label>
+            </p>
+            <p>
+              <input
+                type="checkbox"
+                id="prestamo-personal"
+                name="servicios[]"
+                value="prestamo-personal"
+              />
+              <label for="prestamo-personal">Préstamo personal</label>
+            </p>
+            <p>
+              <input
+                type="checkbox"
+                id="caja-de-seguridad"
+                name="servicios[]"
+                value="caja-de-seguridad"
+              />
+              <label for="caja-de-seguridad">Caja de seguridad</label>
+            </p>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>OTROS DATOS DE INTERÉS</legend>
+          <div role="group" aria-labelledby="temas-interes">
+            <p id="temas-interes">
+              ¿Está usted interesado en alguno de estos temas?
+            </p>
+            <p>
+              <input
+                type="checkbox"
+                id="libros"
+                name="temas[]"
+                value="libros"
+              />
+              <label for="libros">Libros</label>
+            </p>
+            <p>
+              <input
+                type="checkbox"
+                id="viajes"
+                name="temas[]"
+                value="viajes"
+              />
+              <label for="viajes">Viajes</label>
+            </p>
+            <p>
+              <input
+                type="checkbox"
+                id="informatica"
+                name="temas[]"
+                value="informatica"
+              />
+              <label for="informatica">Informática</label>
+            </p>
+            <p>
+              <input
+                type="checkbox"
+                id="cursos"
+                name="temas[]"
+                value="cursos"
+              />
+              <label for="cursos">Cursos</label>
+            </p>
+            <p>
+              <input
+                type="checkbox"
+                id="seguros"
+                name="temas[]"
+                value="seguros"
+              />
+              <label for="seguros">Seguros</label>
+            </p>
+            <p>
+              <input
+                type="checkbox"
+                id="musica"
+                name="temas[]"
+                value="musica"
+              />
+              <label for="musica">Música</label>
+            </p>
+            <p>
+              <input
+                type="checkbox"
+                id="apuestas"
+                name="temas[]"
+                value="apuestas"
+              />
+              <label for="apuestas">Apuestas</label>
+            </p>
+            <p>
+              <input
+                type="checkbox"
+                id="idiomas"
+                name="temas[]"
+                value="idiomas"
+              />
+              <label for="idiomas">Idiomas</label>
+            </p>
+            <p>
+              <input
+                type="checkbox"
+                id="empleo"
+                name="temas[]"
+                value="empleo"
+              />
+              <label for="empleo">Empleo</label>
+            </p>
+          </div>
+          <p>
+            <label for="otros-temas">Otros temas:</label><br />
+            <textarea
+              id="otros-temas"
+              name="otros-temas"
+              placeholder="Escriba aquí sus temas de interés"
+              rows="3"
+              cols="30"
+            ></textarea>
+          </p>
+        </fieldset>
+        <p>Los campos marcados con <b>* </b>son obligatorios.</p>
+        <p>
+          <input type="submit" value="Enviar datos del formulario" />
+          <input type="reset" value="Limpiar los datos del formulario" />
+        </p>
+      </form>
+    </main>
+  </body>
+</html>
