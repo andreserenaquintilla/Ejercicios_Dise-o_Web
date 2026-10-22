@@ -1,0 +1,43 @@
+/*
+table {
+  border: 1px solid;
+  text-align: left;
+  border-collapse: collapse;
+}
+table th {
+  width: 125px;
+  border: 1px solid;
+  padding: 2px;
+}
+table td{
+  width: 10px;
+  border: 1px solid;
+  padding: 2px;
+}
+table.Empleados th {
+  text-align: center;
+}
+*/
+caption {
+  font-size: 1.25em;
+  text-align: left;
+  padding: 2.5px;
+  font-weight: bold;
+}
+table {
+width: 100%;
+border-collapse: collapse;
+}
+th, td {
+border: 1px solid #cbd5e1;
+padding: 10px;
+text-align: left;
+}
+th {
+background-color: #1e293b;
+color: white;
+}
+table.Horario_Sala_Multiservicios td[colspan] {
+  text-align: center;
+  font-weight: bold;
+}

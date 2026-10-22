@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Andrés Serena Quintilla" />
+    <title>Tablas</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header><h1>Ejercicio Tablas</h1></header>
+    <main>
+      <section>
+        <h2>Tabla de Empleados del Gimnasio</h2>
+        <table class="Empleados">
+          <caption>
+            Personal del Gimnasio
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Nombre</th>
+              <th scope="col">Puesto</th>
+              <th scope="col">Horario</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ana García</td>
+              <td>Entrenadora</td>
+              <td>Mañanas</td>
+            </tr>
+            <tr>
+              <td>Miguel Lasheras</td>
+              <td>Entrenador</td>
+              <td>Tardes</td>
+            </tr>
+            <tr>
+              <td>Víctor Mazarico</td>
+              <td>Gerente</td>
+              <td>Mañanas</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <hr />
+      <section>
+        <h2>Tabla de actividades del Gimnasio</h2>
+        <table class="Horario_Sala_Multiservicios">
+          <caption>
+            Actividades de la sala multiservicios, de lunes a viernes
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Hora</th>
+              <th scope="col">Lunes</th>
+              <th scope="col">Martes</th>
+              <th scope="col">Miércoles</th>
+              <th scope="col">Jueves</th>
+              <th scope="col">Viernes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">8:00 - 9:00</th>
+              <td rowspan="2">Pilates</td>
+              <td></td>
+              <td>Pilates</td>
+              <td rowspan="2">Taichi</td>
+              <td>Pilates</td>
+            </tr>
+            <tr>
+              <th scope="row">9:00 - 10:00</th>
+              <td>Core Workout</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row">10:00 - 11:00</th>
+              <td>Kick Boxing</td>
+              <td></td>
+              <td>Kick Boxing</td>
+              <td>Kick Boxing</td>
+              <td>Core Workout</td>
+            </tr>
+            <tr>
+              <th scope="row">11:00 - 12:00</th>
+              <td colspan="5">
+                Mantenimiento / Limpieza de la sala (gimnasio abierto)
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">12:00 - 13:00</th>
+              <td></td>
+              <td rowspan="2">Crossfit</td>
+              <td></td>
+              <td>Crossfit</td>
+              <td>Core Workout</td>
+            </tr>
+            <tr>
+              <th scope="row">13:00 - 14:00</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row">14:00 - 15:00</th>
+              <td colspan="5">Limpieza de la sala multiservicios y cierre</td>
+            </tr>
+            <tr>
+              <th scope="row">15:00 - 17:00</th>
+              <td colspan="5">Sala cerrada</td>
+            </tr>
+            <tr>
+              <th scope="row">17:00 - 18:00</th>
+              <td>Halterofilia</td>
+              <td></td>
+              <td></td>
+              <td rowspan="2">Preparación Opos Físicas</td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row">18:00 - 19:00</th>
+              <td></td>
+              <td>Crossfit</td>
+              <td>Core Workout</td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row">19:00 - 20:00</th>
+              <td></td>
+              <td rowspan="2">Preparación Opos Físicas</td>
+              <td></td>
+              <td></td>
+              <td rowspan="2">Poses para Competición</td>
+            </tr>
+            <tr>
+              <th scope="row">20:00 - 21:00</th>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row">21:00 - 22:00</th>
+              <td colspan="5">
+                Limpieza de la sala multiservicios y del gimnasio
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
+
+/*
+
+*/
