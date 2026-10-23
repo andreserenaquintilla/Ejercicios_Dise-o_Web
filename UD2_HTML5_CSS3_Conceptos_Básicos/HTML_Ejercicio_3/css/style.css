@@ -1,4 +1,5 @@
 /*
+Primer intento, antes de usar el CSS del enunciado, lo he dejado para que lo veas Marta:
 table {
   border: 1px solid;
   text-align: left;
@@ -25,19 +26,27 @@ caption {
   font-weight: bold;
 }
 table {
-width: 100%;
-border-collapse: collapse;
+  width: 100%;
+  border-collapse: collapse;
 }
-th, td {
-border: 1px solid #cbd5e1;
-padding: 10px;
-text-align: left;
+th,
+td {
+  border: 1px solid #cbd5e1;
+  padding: 10px;
+  text-align: left;
 }
 th {
-background-color: #1e293b;
-color: white;
+  background-color: #1e293b;
+  color: white;
 }
 table.Horario_Sala_Multiservicios td[colspan] {
   text-align: center;
   font-weight: bold;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
